@@ -1,0 +1,146 @@
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%) );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    width: 915px ;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns:45% 55% ;
+}
+.containerLeft{
+    grid-column: 1;
+    position: relative;
+}
+
+.containerLeft .bg{
+    position: absolute;
+    left: -620px;
+    top: -300px;
+    width: 1000px;
+}
+
+.containerLeft .girl{
+    position: absolute;
+    left: -90px;
+    top: 70px;
+}
+
+.containerLeft .box{
+    position: absolute;
+    width: 180px;
+    left: -90px;
+    top: 210px;
+    
+}
+
+.containerRight{
+    grid-column: 2;
+    margin: 20px;
+}
+
+h1 {
+    margin: 40px 40px 20px 30px;
+}
+
+.faq{
+    border-bottom: solid 2px hsl(240, 5%, 91%);
+    margin: 0px 70px 0px 30px;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.icon{
+    height: 10px;
+}
+
+.containerRight h2{
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(237, 12%, 33%);
+}
+
+.containerRight .texto{
+    font-size: 12px;
+    color:hsl(240, 6%, 50%);
+    overflow: hidden;
+    text-align: justify;
+    transition: all 1s ease;
+    margin: 0;
+    height: 0;
+}
+
+.faq.activo .h2{
+    font-weight: 700;
+}
+
+.faq.activo .icon{
+    transform:rotate(180deg)
+
+}
+
+.faq.activo .texto{
+    height: 50px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width:768px){
+
+    .container{
+        grid-template-rows: 10% 70%;
+        grid-template-columns: auto;
+        width: auto;
+        height: 700px;
+        margin-top: 200px;
+    }
+    
+    .containerLeft{
+        grid-row: 1;
+    }
+
+    .containerLeft .bg{
+        width: 350px;
+    }
+
+    .containerLeft .girl{
+        left: 20px;
+        top: -160px;
+        width: 350px;
+    }
+
+    .containerLeft .box{
+        width: 100px;
+        left: 30px;
+        top:-40px
+    }
+
+    .containerRight{
+        grid-row: 2;
+        margin-top: 50px;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .faq{
+        margin: 0px 10px 0px 10px;
+    }    
+}
