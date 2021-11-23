@@ -6,6 +6,7 @@ body{
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    
 }
 
 .container{
@@ -103,12 +104,15 @@ h1 {
 
 @media (max-width:768px){
 
+    body{
+        height: 100%;
+    }
     .container{
-        grid-template-rows: 10% 70%;
         grid-template-columns: auto;
-        width: auto;
-        height: 700px;
+        grid-template-rows: 10% 70%;
+        height: 600px;
         margin-top: 200px;
+        width: 400px;
     }
     
     .containerLeft{
@@ -116,13 +120,15 @@ h1 {
     }
 
     .containerLeft .bg{
-        width: 350px;
+        left: 50px;
+        top: -160px;
+        width: 300px;
     }
 
     .containerLeft .girl{
-        left: 20px;
-        top: -160px;
-        width: 350px;
+        left: 50px;
+        top: -140px;
+        width: 300px;
     }
 
     .containerLeft .box{
