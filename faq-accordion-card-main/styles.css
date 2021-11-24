@@ -19,32 +19,30 @@ body{
 .containerLeft{
     grid-column: 1;
     position: relative;
+    background: url(./images/bg-pattern-desktop.svg) no-repeat;
+    background-position: -410px -200px;
+    background-size: 800px;
 }
 
-.containerLeft .bg{
-    position: absolute;
-    left: -620px;
-    top: -300px;
-    width: 1000px;
-}
-
-.containerLeft .girl{
-    position: absolute;
-    left: -90px;
-    top: 70px;
+.girl{
+    background: url(./images/illustration-woman-online-desktop.svg) no-repeat;
+    width: 400px;
+    height: 470px;
+    background-position: -80px;
 }
 
 .containerLeft .box{
     position: absolute;
     width: 180px;
-    left: -90px;
-    top: 210px;
+    left: -89px;
+    top: 200px;
     
 }
 
 .containerRight{
     grid-column: 2;
     margin: 20px;
+    cursor: pointer;
 }
 
 h1 {
@@ -80,6 +78,10 @@ h1 {
     height: 0;
 }
 
+.h2:hover{
+    color: hsl(14, 88%, 65%) ;
+}
+
 .faq.activo .h2{
     font-weight: 700;
 }
@@ -109,26 +111,26 @@ h1 {
     }
     .container{
         grid-template-columns: auto;
-        grid-template-rows: 10% 70%;
+        grid-template-rows: 20% 70%;
         height: 600px;
-        margin-top: 200px;
+        margin-top: 150px;
         width: 400px;
     }
     
     .containerLeft{
         grid-row: 1;
+        grid-column: 1;
+        background-size: 300px;
+        background-position: center bottom
     }
 
-    .containerLeft .bg{
-        left: 50px;
-        top: -160px;
-        width: 300px;
-    }
-
-    .containerLeft .girl{
-        left: 50px;
-        top: -140px;
-        width: 300px;
+    .girl{
+        background-position:center center;
+        background-size: 300px;
+        width: 400px;
+        height: 250px;
+        position: relative;
+        top:-150px
     }
 
     .containerLeft .box{
@@ -139,11 +141,12 @@ h1 {
 
     .containerRight{
         grid-row: 2;
-        margin-top: 50px;
+        grid-column: 1;
     }
 
     h1{
         text-align: center;
+        margin-top: 0px ;
     }
 
     .faq{
